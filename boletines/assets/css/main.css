@@ -1,0 +1,142 @@
+html{
+	font-family: 'Nunito', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color:#d500f9;
+}
+
+a:hover{
+	opacity: 0.8;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+.title{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+.container{
+	background: #009FFF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.content{
+	max-width: 1080px;
+	width: 100%;
+	height: 80vh;
+	background-color: white;
+	border-radius: 10px;
+	position: relative;
+	padding: 1.8em;
+	overflow-y: scroll;
+}
+
+.actions{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.close{
+	height: 40px;
+	width: 40px;
+	color: white;
+	border-radius: 50%;
+	background-color: #642B73;
+	display: inline-block;
+	font-weight: 30px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.paragraf{
+	line-height: 2em;
+	font-weight: 200;
+}
+
+.table{
+	width: 100%;
+	border-spacing: 0;
+}
+
+.table td, .table th{
+	padding: 1em;
+	text-align: left;
+
+}
+
+.fa-star{
+	color: #ffc400;
+}
+
+
+.table tr:nth-child(even){
+	background-color: #bdc3c7;
+
+}
+
+.title-item{
+	padding-bottom: 1em;
+	border-bottom: solid 2px #bdc3c7;
+	font-size: 2em;
+
+}
+
+.position{
+	background-color: #C6426E;
+	color:white;
+	padding: 0.5em;
+	border-radius: 4px;
+	margin-right: 0.5em;
+
+}
+
+.main-image{
+	height: 250px;
+	float: left;
+	margin-right: 1em;
+}
+
+
+@media (max-width: 600px){
+	.content{
+		padding: 1em;
+	}
+
+	td{
+		display: block;
+		width: 100%;
+	}
+	td:nth-of-type(1){
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	th{
+		display: none;
+
+	}
+
+}
+
+@media (min-height: 550px){
+	.content{
+		height: 500px;
+	}
+
+}
